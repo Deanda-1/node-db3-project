@@ -95,8 +95,8 @@ async function findById(scheme_id) { // EXERCISE B
  .select('st.*', 'sc.scheme_name', 'sc.scheme_id')
  .orderBy('st.step_number')
  const result = {
-  acheme_id: rows[0].scheme_id,
-  acheme_name: rows[0].scheme_name,
+  scheme_id: rows[0].scheme_id,
+  scheme_name: rows[0].scheme_name,
   steps: []
  }
  rows.forEach(row => {
